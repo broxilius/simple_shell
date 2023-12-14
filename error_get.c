@@ -1,9 +1,10 @@
 #include "shell.h"
 
 /**
- * get_error - Retrieves an error message based on the shell data and evaluation result.
+ * get_error - Retrieves an error message based on the shell data and
  * @datash: Shell data structure containing relevant information.
  * @eval: Evaluation result or error code.
+ * return : void
 **/
 int get_error(data_shell *datash, int eval)
 {

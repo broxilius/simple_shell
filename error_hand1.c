@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * strcat_cd - Concatenates strings related to the cd command for error messages.
+ * strcat_cd - Concatenates strings related to the cd command for erro
  * @datash: Shell data structure containing relevant information.
  * @msg: Message part of the error.
  * @error: Specific error part of the message.
- * @ver_str: Version string, if applicable. 
+ * @ver_str: Version string, if applicable
  * Return: A pointer to the concatenated error message string.
 **/
 
@@ -39,8 +39,8 @@ char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
 }
 
 /**
- * error_get_cd - Retrieves and prints an error message related to the cd command.
- * @datash: Shell data structure containing relevant information. 
+ * error_get_cd - Retrieves and prints an error message related to the cd
+ * @datash: Shell data structure containing relevant information
  * Return: None.
 **/
 char *error_get_cd(data_shell *datash)
@@ -78,9 +78,9 @@ char *error_get_cd(data_shell *datash)
 }
 
 /**
- * error_not_found - Prints an error message for a command not found.
- * @datash: Shell data structure containing relevant information. 
- * eturn: None.
+ * error_not_found - printing an error message.
+ * @datash: Shell data structure containing relevant information
+ * return: error when error and null otherwise.
 **/
 char *error_not_found(data_shell *datash)
 {
@@ -111,7 +111,7 @@ char *error_not_found(data_shell *datash)
 
 /**
  * error_exit_shell - Prints an error message and exits the shell.
- * @datash: Shell data structure containing relevant information. 
+ * @datash: Shell data structure containing relevant information
  * Return: None.
 **/
 char *error_exit_shell(data_shell *datash)

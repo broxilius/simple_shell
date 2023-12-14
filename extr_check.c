@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * check_env - Checks and handles environment variables in the shell.
- * @h: A placeholder parameter description (replace with an appropriate description).
- * @in: A placeholder parameter description (replace with an appropriate description).
- * @data: A placeholder parameter description (replace with an appropriate description).
- * Return: A placeholder return description (replace with an appropriate description).
+ * check_env - Checks and handles environment variables in the
+ * @h: A placeholder parameter description (replace with an riate
+ * @in: A placeholder parameter description (replace with an appr
+ * @data: A placeholder parameter description (replace with an appropriat
+ * Return: A placeholder return description (replace with an appropr
 **/
 void check_env(r_var **h, char *in, data_shell *data)
 {
@@ -42,11 +42,11 @@ void check_env(r_var **h, char *in, data_shell *data)
 
 /**
  * check_vars - Checks and handles variables in the shell.
- * @h: A placeholder parameter description (replace with an appropriate description).
- * @in: A placeholder parameter description (replace with an appropriate description).
- * @st: A placeholder parameter description (replace with an appropriate description).
- * @data: A placeholder parameter description (replace with an appropriate description).
- * Return: A placeholder return description (replace with an appropriate description).
+ * @h: A placeholder parameter description (replace with an appro
+ * @in: A placeholder parameter description (replace with an appropr
+ * @st: A placeholder parameter description (replace with an appropr
+ * @data: A placeholder parameter description (replace with an a
+ * Return: A placeholder return description (replace with an ap
 **/
 int check_vars(r_var **h, char *in, char *st, data_shell *data)
 {
@@ -82,7 +82,7 @@ int check_vars(r_var **h, char *in, char *st, data_shell *data)
 }
 
 /**
- * replaced_input - Replaces a portion of the input string with new content.
+ * replaced_input - Replaces a portion of the input string with new con
  * @head: A pointer to the head or start of the input string.
  * @input: The original input string.
  * @new_input: The content to replace in the input string.
@@ -134,7 +134,7 @@ char *replaced_input(r_var **head, char *input, char *new_input, int nlen)
 }
 
 /**
- * rep_var - Replaces variables in the input string with their corresponding values.
+ * rep_var - Replaces variables in the input string with their
  * @input: The input string containing variables to be replaced.
  * @datash: Shell data structure containing relevant information.
  * Return: A pointer to the modified input string with variables replaced.

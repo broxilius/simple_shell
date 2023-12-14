@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * swap_char - Swaps characters in the input string based on a boolean condition.
- * @input: The input string in which characters are to be swapped.
- * @bool: A boolean condition determining whether to perform the character swap.
+ * swap_char - Swaps characters in the input string base
+ * @input: The input string in which characters are t
+ * @bool: A boolean condition determining whether to pe
  * Return: A pointer to the modified input string.
 **/
 char *swap_char(char *input, int bool)
@@ -82,7 +82,7 @@ void add_nodes(sep_list **head_s, line_list **head_l, char *input)
  * @list_s: The small linked list.
  * @list_l: The large linked list.
  * @datash: Shell data structure containing relevant information.
- * Return: [Description of the return value, if any. For example, success/error code.]
+ * Return: [Description of the return value, if any. For exa
 **/
 void go_next(sep_list **list_s, line_list **list_l, data_shell *datash)
 {
@@ -122,7 +122,7 @@ void go_next(sep_list **list_s, line_list **list_l, data_shell *datash)
  * split_commands - Splits input into individual commands and processes them.
  * @datash: Shell data structure containing relevant information.
  * @input: The input string to be split into commands.
- * Return: [Description of the return value, if any. For example, success/error code.]
+ * Return: [Description of the return value, if any. For example, success
 **/
 int split_commands(data_shell *datash, char *input)
 {
@@ -165,7 +165,7 @@ int split_commands(data_shell *datash, char *input)
 /**
  * split_line - Splits an input string into individual tokens.
  * @input: The input string to be split.
- * Return: [Description of the return value, if any. For example, an array of tokens.]
+ * Return: [Description of the return value, if any. Fo
 **/
 char **split_line(char *input)
 {

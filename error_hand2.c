@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * error_env - Prints an error message related to environment variable handling.
+ * error_env - Prints an error message related to environment variabl
  * @datash: Shell data structure containing relevant information.
  * Return: None.
 **/
@@ -36,7 +36,7 @@ char *error_env(data_shell *datash)
 	return (error);
 }
 /**
- * error_path_126 - Prints an error message for a command not found in the specified path.
+ * error_path_126 - Prints an error message for a command not found i
  * @datash: Shell data structure containing relevant information.
  * Return: None.
 **/
