@@ -21,14 +21,14 @@ extern char **environ;
 
 
 /**
- * struct data -
- * @av: 
- * @input: 
- * @args:
- * @status: 
- * @counter:
- * @_environ: 
- * @pid: 
+ * struct data - Structure for storing shell data.
+ * @av: Array of strings containing the shell arguments.
+ * @input: Pointer to the input string.
+ * @args: Array of strings containing parsed command arguments.
+ * @status: Integer to store the exit status of the last executed command.
+ * @counter: Counter for tracking command executions.
+ * @_environ: Array of strings containing the environment variables.
+ * @pid: Process ID as a string.
  */
 typedef struct data
 {
@@ -42,10 +42,11 @@ typedef struct data
 } data_shell;
 
 /**
- * struct sep_list_s 
- * @separator: ; | &
- * @next: 
- * Description: 
+ * struct sep_list_s - Structure for a list of separators.
+ * @separator: Separator character ; | &
+ * @next: Pointer to the next separator node.
+ * Description: Used for parsing and separating commands.
+ */
 typedef struct sep_list_s
 {
 	char separator;
@@ -53,10 +54,10 @@ typedef struct sep_list_s
 } sep_list;
 
 /**
- * struct line_list_s - 
- * @line: 
- * @next: 
- * Description:  
+ * struct line_list_s - Structure for a list of lines.
+ * @line: Pointer to a line string.
+ * @next: Pointer to the next line node.
+ * Description: Used for storing lines of commands.
  */
 typedef struct line_list_s
 {
@@ -65,12 +66,12 @@ typedef struct line_list_s
 } line_list;
 
 /**
- * struct r_var_list - kana zvaka dayi
- * @len_var: 
- * @val: 
- * @len_val: 
- * @next: 
- * Description: 
+ * struct r_var_list - Structure for variable replacement.
+ * @len_var: Length of the variable.
+ * @val: Pointer to the value of the variable.
+ * @len_val: Length of the value.
+ * @next: Pointer to the next variable node.
+ * Description: Used for storing variables for variable replacement.
  */
 typedef struct r_var_list
 {
@@ -81,9 +82,9 @@ typedef struct r_var_list
 } r_var;
 
 /**
- * struct builtin_s - 
- * @name: 
- * @f: 
+ * struct builtin_s - Structure for built-in commands.
+ * @name: Name of the built-in command.
+ * @f: Pointer to the corresponding function for the built-in command.
  */
 typedef struct builtin_s
 {

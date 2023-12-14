@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * free_data - 
- * @datash: 
- * Return: 
+ * free_data - Frees memory allocated for the shell's data structure.
+ * @datash: Pointer to the data_shell structure to be freed.
+ * Return: void
  */
 void free_data(data_shell *datash)
 {
@@ -19,10 +19,10 @@ void free_data(data_shell *datash)
 }
 
 /**
- * set_data - 
- * @datash: 
- * @av: 
- * Return: 
+ * set_data - Initializes the shell data structure with environment variables.
+ * @datash: Pointer to the data_shell structure to be initialized.
+ * @av: Command-line arguments passed to the shell.
+ * Return: void
  */
 void set_data(data_shell *datash, char **av)
 {
@@ -49,10 +49,10 @@ void set_data(data_shell *datash, char **av)
 }
 
 /**
- * main - 
- * @ac: 
- * @av: 
- * Return:
+ * main - The main entry point of the shell program.
+ * @ac: The number of command-line arguments.
+ * @av: Array of command-line argument strings.
+ * Return: An integer representing the exit status of the shell.
  */
 int main(int ac, char **av)
 {

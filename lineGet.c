@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * bring_line - 
- * @lineptr: 
- * @buffer: 
- * @n: 
- * @j: 
+ * bring_line - Manages the allocation and copying of input lines.
+ * @lineptr: Pointer to the line buffer.
+ * @buffer: Temporary buffer containing input characters.
+ * @n: Temporary buffer containing input characters.
+ * @j: Size of the input line.
  */
 void bring_line(char **lineptr, size_t *n, char *buffer, size_t j)
 {
@@ -34,11 +34,11 @@ void bring_line(char **lineptr, size_t *n, char *buffer, size_t j)
 	}
 }
 /**
- * get_line - 
- * @lineptr: 
- * @n: 
- * @stream: 
- * Return: 
+ * get_line - Reads a line from the specified stream.
+ * @lineptr: Pointer to the line buffer.
+ * @n: Pointer to the size of the line buffer.
+ * @stream: File stream to read from.
+ * Return: Number of characters read, or -1 on failure.
  */
 ssize_t get_line(char **lineptr, size_t *n, FILE *stream)
 {

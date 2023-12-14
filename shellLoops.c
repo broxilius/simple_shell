@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * without_comment - 
- * @in: 
- * Return: 
+ * without_comment - Removes comments from the input string.
+ * @in: The input string.
+ * Return: Modified input without comments or NULL if the line is a comment.
  */
 char *without_comment(char *in)
 {
@@ -34,10 +34,9 @@ char *without_comment(char *in)
 }
 
 /**
- * shell_loop - 
- * @datash: 
- *
- * Return: 
+ * shell_loop - Main loop for the shell.
+ * @datash: The data structure containing shell information.
+ * Return: void
  */
 void shell_loop(data_shell *datash)
 {

@@ -1,10 +1,9 @@
 #include "shell.h"
 
 /**
- * read_line - 
- *
- * @i_eof: 
- * Return: 
+ * read_line - Reads a line from standard input.
+ * @i_eof: Pointer to an integer to indicate end-of-file status.
+ * Return: A pointer to the read line.
  */
 char *read_line(int *i_eof)
 {

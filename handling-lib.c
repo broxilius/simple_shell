@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * get_len - 
- * @n: 
- * Return: 
+ * get_len - Calculates the number of digits in an integer.
+ * @n: The integer to calculate the length of.
+ * Return: The number of digits in the integer.
  */
 int get_len(int n)
 {
@@ -28,9 +28,9 @@ int get_len(int n)
 	return (lenght);
 }
 /**
- * aux_itoa - 
- * @n: 
- * Return: 
+ * aux_itoa - Converts an integer to a string.
+ * @n: The integer to be converted.
+ * Return: The resulting string.
  */
 char *aux_itoa(int n)
 {
@@ -66,9 +66,9 @@ char *aux_itoa(int n)
 }
 
 /**
- * _atoi - 
- * @s: 
- * Return: .
+ * _atoi - Converts a string to an integer.
+ * @s: The string to be converted.
+ * Return: The resulting integer.
  */
 int _atoi(char *s)
 {

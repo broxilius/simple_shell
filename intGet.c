@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * get_sigint - 
- * @sig: 
+ * get_sigint - Handles the SIGINT signal.
+ * @sig: Signal number (unused parameter).
  */
 void get_sigint(int sig)
 {

@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * aux_help_env - 
- * Return: 
+ * aux_help_env - Displays help information for the 'env' command.
+ * Return: void
  */
 void aux_help_env(void)
 {
@@ -14,8 +14,8 @@ void aux_help_env(void)
 
 }
 /**
- * aux_help_setenv -
- * Return: 
+ * aux_help_setenv - Displays help information for the 'setenv' command.
+ * Return: void
  */
 void aux_help_setenv(void)
 {
@@ -29,8 +29,8 @@ void aux_help_setenv(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
- * aux_help_unsetenv -
- * Return: 
+ * aux_help_unsetenv - Displays help information for the 'unsetenv' command.
+ * Return: void
  */
 void aux_help_unsetenv(void)
 {
@@ -43,8 +43,8 @@ void aux_help_unsetenv(void)
 
 
 /**
- * aux_help_general - 
- * Return: 
+ * aux_help_general - Displays general help information.
+ * Return: void
  */
 void aux_help_general(void)
 {
@@ -65,8 +65,8 @@ void aux_help_general(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
- * aux_help_exit - 
- * Return: 
+ * aux_help_exit - Displays help information for the 'exit' command.
+ * Return: void
  */
 void aux_help_exit(void)
 {

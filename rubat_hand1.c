@@ -1,8 +1,9 @@
 #include "shell.h"
 
+
 /**
- * aux_help - 
- * Return:
+ * aux_help - Displays help information for the 'help' command.
+ * Return: void
  */
 void aux_help(void)
 {
@@ -15,8 +16,8 @@ void aux_help(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
- * aux_help_alias - 
- * Return: 
+ * aux_help_alias - Displays help information for the 'alias' command.
+ * Return: void
  */
 void aux_help_alias(void)
 {
@@ -27,8 +28,8 @@ void aux_help_alias(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
- * aux_help_cd - 
- * Return: 
+ * aux_help_cd - Displays help information for the 'cd' command.
+ * Return: void
  */
 void aux_help_cd(void)
 {

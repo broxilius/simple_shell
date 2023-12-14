@@ -1,10 +1,9 @@
 #include "shell.h"
 
 /**
- * exec_line - 
- *
- * @datash: 
- * Return: 
+ * exec_line - Executes a command line.
+ * @datash: The data structure containing shell information.
+ * Return: exit status of the executed command or 1 if no command is provided.
  */
 int exec_line(data_shell *datash)
 {

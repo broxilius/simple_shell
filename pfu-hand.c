@@ -1,12 +1,11 @@
 #include "shell.h"
 
 /**
- * _memcpy - 
- * @newptr: 
- * @ptr: 
- * @size: 
- *
- * Return: 
+ * _memcpy - Copies 'size' bytes from 'ptr' to 'newptr'.
+ * @newptr: Destination memory pointer.
+ * @ptr: Source memory pointer.
+ * @size: Number of bytes to copy.
+ * Return: void
  */
 void _memcpy(void *newptr, const void *ptr, unsigned int size)
 {
@@ -19,12 +18,11 @@ void _memcpy(void *newptr, const void *ptr, unsigned int size)
 }
 
 /**
- * _realloc - 
- * @ptr: 
- * @old_size: 
- * @new_size: 
- *
- * Return: 
+ * _realloc - Resizes the memory block pointed to by 'ptr'.
+ * @ptr: Pointer to the memory block to be resized.
+ * @old_size: Current size of the memory block.
+ * @new_size: New size to resize the memory block to.
+ * Return: A pointer to the resized memory block or NULL on failure.
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
@@ -56,12 +54,11 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 }
 
 /**
- * _reallocdp - 
- * @ptr:
- * @old_size: 
- * @new_size: 
- *
- * Return: 
+ * _reallocdp - Resizes the array of strings pointed to by 'ptr'.
+ * @ptr: Pointer to the array of strings to be resized.
+ * @old_size: Current size of the array.
+ * @new_size: New size to resize the array to.
+ * Return: A pointer to the resized array of strings or NULL on failure.
  */
 char **_reallocdp(char **ptr, unsigned int old_size, unsigned int new_size)
 {
