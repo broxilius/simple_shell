@@ -1,10 +1,12 @@
 #include "shell.h"
 
+
 /**
- * cd_dot - Handles the "cd" command for dot (.) directory in the shell.
- * @datash: Shell data structure containing relevant information.
- * Return: [Description of the return value, if any. For example, success/error code.]
-**/
+* cd_dot - Handles the 'cd .' 
+* @datash: Data structure containi
+* Return: None.
+*/
+
 void cd_dot(data_shell *datash)
 {
 	char pwd[PATH_MAX];
@@ -50,10 +52,12 @@ void cd_dot(data_shell *datash)
 }
 
 /**
- * cd_to - Changes the current working directory in the shell to a specified location.
- * @datash: Shell data structure containing relevant information.
- * Return: [Description of the return value, if any. For example, success/error code.]
-**/
+* cd_to - Handles the to a specified directory.
+*
+* @datash: Data structure containing shell
+* Return: None.
+*/
+
 void cd_to(data_shell *datash)
 {
 	char pwd[PATH_MAX];
@@ -80,11 +84,15 @@ void cd_to(data_shell *datash)
 	datash->status = 0;
 
 	chdir(dir);
+}
+
 /**
- * cd_previous - Changes the current working directory in the shell to the previous directory.
- * @datash: Shell data structure containing relevant information.
- * Return: [Description of the return value, if any. For example, success/error code.]
-**/
+* cd_previous - Handles the 'cto the previous directory.
+*
+* @datash: Data structure contg shell info
+* Return: None.
+*/
+
 void cd_previous(data_shell *datash)
 {
 	char pwd[PATH_MAX];
@@ -120,11 +128,12 @@ void cd_previous(data_shell *datash)
 
 	chdir(p_pwd);
 }
+
 /**
- * cd_to_home - Changes the current working directory in the shell to the user's home directory.
- * @datash: Shell data structure containing relevant information.
- * Return: [Description of the return value, if any. For example, success/error code.]
-**/
+* cd_to_home - Handles the 'cd' com to the user's directory.
+* @datash: Data struc contain shell inf.
+* Return: None.
+*/
 void cd_to_home(data_shell *datash)
 {
 	char *p_pwd, *home;
