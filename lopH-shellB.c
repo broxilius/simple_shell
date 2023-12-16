@@ -2,7 +2,7 @@
 
 /**
 * without_comment - Removes
-* @in: Input str shell 
+* @in: Input str shell
 * Return: Modified iwithout comments
 */
 

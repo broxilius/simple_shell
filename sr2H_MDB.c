@@ -91,7 +91,6 @@ char *_strtok(char str[], const char *delim)
 		if (splitted != str_start)
 			if (*splitted && *(splitted - 1) == '\0')
 				break;
-		
 		for (i = 0; delim[i]; i++)
 		{
 			if (*splitted == delim[i])

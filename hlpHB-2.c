@@ -31,7 +31,7 @@ void aux_help_setenv(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
-* aux_help_unsetenv -Displays about the 'unsetenv' 
+* aux_help_unsetenv -Displays about the 'unsetenv'
 * Return: void
 */
 void aux_help_unsetenv(void)
@@ -45,7 +45,7 @@ void aux_help_unsetenv(void)
 
 
 /**
-* aux_help_general - Displays help 
+* aux_help_general - Displays help
 * Return: void.
 */
 void aux_help_general(void)

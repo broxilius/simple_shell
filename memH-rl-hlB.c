@@ -22,8 +22,8 @@ void _memcpy(void *newptr, const void *ptr, unsigned int size)
 /**
 * _realloc - Resizes mem'new_size' bytes.
 * @ptr: Pointer to the resize.
-* @old_size: ld size 
-* @new_size: New size 
+* @old_size: ld size
+* @new_size: New size
 * Return: Pointer to memory block
 */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)

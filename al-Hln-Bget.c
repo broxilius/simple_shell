@@ -4,7 +4,7 @@
 * bring_line - Upd lineptr and n parameters  buffer.
 * @lineptr: Pointer pointer that will store
 * @buffer: The  buffer.
-* @n:  Pointer size parameter for 
+* @n:  Pointer size parameter for
 * @j: The size input buffer.
 */
 
